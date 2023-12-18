@@ -34,10 +34,29 @@ public class Main {
         String[] z = {"Pen", "Pineapple" ,"Apple", "Pen", "Apple"};
         System.out.println(Algs.alg6(z));
 
+        int[] ii = {2, 3 ,4};
+        int[] ll = {-1, -2 ,-3};
+        System.out.println(Algs.alg7(ii, ll));
+        int[] jj = {8, 7 ,3,4,5};
+        int[] cc = {3, -6 ,1};
+        System.out.println(Algs.alg7(jj, cc));
+
+        double[] ww = {2.0, 3.0, 4.0, 5.0};
+        System.out.println(Algs.alg8(ww));
+        double[] qq = {9.0, 34.0, 75.0, 5.0};
+        System.out.println(Algs.alg8(qq));
+
+        int[] d = {1, 0, -1};
+        System.out.println(Algs.alg11(d));
+        int[] qc = {8, -7 ,2,-3,5};
+        System.out.println(Algs.alg11(qc));
+
         String[] a = {"zebra", "alpha"};
         System.out.println(Algs.alg14(a));
         String[] p = {"apple", "banana" ,"vines"};
         System.out.println(Algs.alg14(p));
+
+
 
 
     }
