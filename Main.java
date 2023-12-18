@@ -21,15 +21,15 @@ public class Main {
 
         int[] w = {3, 2 ,1};
         System.out.println(Algs.alg4(w));
-        int[] q = {8, 7 ,3,4,1,5};
+        int[] q = {8, 7 ,3,4,5};
         System.out.println(Algs.alg4(q));
 
-        String[] f = {"Hello",", ", "world" ,"!"};
+        String[] f = {"Hello, ", "world" ,"!"};
         System.out.println(Algs.alg5(f));
         String[] x = {"Pen", "Pineapple" ,"Apple", "Pen"};
         System.out.println(Algs.alg5(x));
 
-        String[] v = {"Hello",", ", "world" ,"!"};
+        String[] v = {"Hello, ", "world" ,"!"};
         System.out.println(Algs.alg6(v));
         String[] z = {"Pen", "Pineapple" ,"Apple", "Pen", "Apple"};
         System.out.println(Algs.alg6(z));
@@ -42,4 +42,3 @@ public class Main {
 
     }
 }
-
