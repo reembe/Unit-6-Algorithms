@@ -1,4 +1,3 @@
-
 public class Algs {
 
 
@@ -17,9 +16,9 @@ public class Algs {
 
 
     public static int alg3(int[] i) {
-        int max = 0;
-        for (int j = 0; j < i.length; j++) {
-            if (i[j] > i[j + 1] && j < (i.length - 1)) {
+        int max = i[0];
+        for (int j = 1; j < i.length; j++) {
+            if (i[j] > i[j - 1]) {
                 max = i[j];
             }
         }
@@ -28,9 +27,9 @@ public class Algs {
 
 
     public static int alg4(int[] i) {
-        int min = 0;
-        for (int j = 0; j < i.length; j++) {
-            if (i[j] < i[j + 1] && j != (i.length - 1)) {
+        int min = i[0];
+        for (int j = 1; j < i.length; j++) {
+            if (i[j] < i[j - 1]) {
                 min = i[j];
             }
         }
@@ -39,10 +38,10 @@ public class Algs {
 
         public static String alg5(String[] i)
     {
-        String shrt = "null";
-        for (int j = 0; j < i.length; j++)
+        String shrt = i[0];
+        for (int j = 1; j < i.length; j++)
         {
-            if (i[j].length() < i[j + 1].length() && j != (i.length - 1))
+            if (i[j].length() < i[j - 1].length())
             {
                 shrt = i[j];
             }
@@ -54,10 +53,10 @@ public class Algs {
 
     public static String alg6(String[] i)
     {
-        String shrt = "null";
-        for (int j = 0; j < i.length; j++)
+        String shrt = i[0];
+        for (int j = 1; j < i.length; j++)
         {
-            if (i[j].length() > i[j + 1].length() && j != (i.length - 1))
+            if (i[j].length() > i[j - 1].length())
             {
                 shrt = i[j];
             }
@@ -72,10 +71,10 @@ public class Algs {
 
     public static String alg14(String[] i)
     {
-        String shrt = "null";
-        for (int j = 0; j < i.length; j++)
+        String shrt = i[0];
+        for (int j = 1; j < i.length; j++)
         {
-            if (i[j].compareTo(i[j+1]) > 0 && j != (i.length - 1))
+            if (i[j].compareTo(i[j-1]) > 0)
             {
                 shrt = i[j];
             }
