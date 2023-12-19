@@ -58,7 +58,7 @@ public class Algs {
         String shrt = i[0];
         for (int j = 1; j < i.length; j++)
         {
-            if (i[j].length() < i[j - 1].length())
+            if (i[j].length() > i[j - 1].length())
             {
                 shrt = i[j];
             }
@@ -93,24 +93,33 @@ public class Algs {
 
     }
 
-//    public static boolean alg10(int[] i)
-//    {
-//        int count = 0;
-//        for (int j = 0; j < i.length; j++) {
-//            if (j == 0 && i[0] == i[j + 1]) {
-//                count++;
-//            }
-//            if (i[j] == i[j - 1]) {
-//                count++;
-//            }
-//        }
-//        if(count  >= 2)
-//        {
-//            return true;
-//        }
-//        return false;
-//
-//    }
+    public static int[] alg9(int[] i)
+    {
+        for (int k = 0; k < i.length / 2; k++)
+        {
+            int j = i[k];
+            i[k] = i[i.length - k - 1];
+            i[i.length - k - 1] = j;
+
+        }
+        return i;
+
+    }
+
+    public static boolean alg10(int[] i)
+    {
+        int count = 0;
+        for (int j = 0; j < i.length - 1; j++) {
+
+                if (i[j] == i[j + 1]) {
+                    count++;
+
+
+            }
+        }
+        return count >= 1;
+
+    }
 
     public static int alg11(int[] i)
     {
@@ -122,9 +131,33 @@ public class Algs {
         return -1;
     }
 
+    public static boolean alg12(int[] i){
+        for(int j = 0; j < i.length; j++ ){
+            for(int l = j; l < i.length; l++){
+                if(l + 1 < i.length && i[j] == i[l + 1])
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
+    public static int alg13(int[] i, int L) {
+        int l = 0;
+        int j = 0;
 
+        for (int k : i) {
+            if (k == L) {
+                l++;
+            } else {
+                if (l > j) j = l;
+                l = 0;
+            }
 
+        }
+        return Math.max(l, j);
+    }
     public static String alg14(String[] i)
     {
         String shrt = i[0];
