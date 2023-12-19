@@ -103,7 +103,7 @@ public class Main {
         System.out.println(Algs.alg14(a));
         String[] p = {"apple", "banana" ,"vines"};
         System.out.println(Algs.alg14(p));
-        String[] ps = {"does", "the", "fox"};
+        String[] ps = {"what", "does", "the", "fox"};
         System.out.println(Algs.alg14(ps));
 
 
