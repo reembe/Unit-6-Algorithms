@@ -163,7 +163,7 @@ public class Algs {
         String shrt = i[0];
         for (int j = 1; j < i.length; j++)
         {
-            if (i[j].compareTo(i[j-1]) > 0)
+           if (shrt.compareTo(i[j]) < 0)
             {
                 shrt = i[j];
             }
